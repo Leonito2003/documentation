@@ -32,7 +32,7 @@ Une page dédiée de la documentation à ce sujet est disponible [ici](./create-
     * #### Télécharger des Plugins
         Vous pouvez télécharger des plugins depuis des sites tels que [Spigot](https://www.spigotmc.org/resources/) ou [Bukkit](https://dev.bukkit.org/).
     * #### Installer des Plugins
-        Pour installer les mods téléchargés, votre serveur doit forcément utiliser Pigot, Bukkit, Paper ou Sponge. Pour en créer un de ce type, voir [ici](./create-server).
+        Pour installer les mods téléchargés, votre serveur doit forcément utiliser Pigot, Bukkit, Paper ou Sponge. Pour en créer un de ce type, voir [ici](./create-server.md).
         Ensuite, naviguez vers le dossier de votre serveur. Il se situe dans le dossier d'installation de MCSS sous le chemin `/servers/<votre-serveur>`. Vous pouvez aussi y acceder directement depuis MCSS en cliquant sur `Server > Show in file explorer`.
         Il devrait y avoir un dossier `plugins`, si il n'existe pas essayer de lancer le serveur puis de l'arrêter. Si vous ne voyez toujours pas ce dossier, créez-le : il doit s'appeler exactement `plugins`. Pour finir, déposez les fichiers .jar de vos plugins dans le dossier plugins et démarrez votre serveur.
 * ### Datapacks
