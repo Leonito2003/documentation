@@ -1,49 +1,47 @@
-# Create a Forge server
+# Créer un serveur Forge
 
 ---
 
-*   [Download Forge](#download-forge)
-*   [Create the Forge server](#create-forge-server)
-*   [Migrate the server to MCSS](#migrate-server)
+*   [Télécharger Forge](#download-forge)
+*   [Créer le serveur Forge](#create-forge-server)
+*   [Importer le serveur dans MCSS](#migrate-server)
 
 <a name="download-forge"></a>
-## Download Forge
+## Télécharger Forge
 
-Go to the [Forge website](https://files.minecraftforge.net) and choose the version that you want to download. Click on "Installer" to download that version's installer.
+Commencez par aller sur [le site de Forge](https://files.minecraftforge.net) et choisissez la version que vous voulez télécharger. Cliquez sur "Installer" pour télécharger l'installateur forge.
 
-![Forge website](assets/screenshots/download_forge.png)
+![Le site de forge](assets/screenshots/download_forge.png)
 
-Wait for the end of the ad (6 seconds) and click on "Skip" at the top right of the page. A .jar file will be downloaded.
+Attendez la fin de la pub (6 secondes) et cliquez sur "Skip" en haut à droite. Un fichier .jar va être téléchargé.
 
 <a name="create-forge-server"></a>
-## Create the Forge server
+## Créer le serveur Forge
 
-Once the download is done, open the file `forge-<minecraft_version>-<forge_version>-installer.jar` to begin the Forge server installation. <br>
-Choose "install server" and select an empty folder in which the server wil temporarily be installed (it will then be moved to the MCSS folder) and click OK. All the required files will be downloaded and placed in the selected folder.
+Une fois le téléchargement terminé, ouvrez le fichier `forge-<version_minecraft>-<version_forge>-installer.jar` pour commencer l'installation de Forge.<br>
+Choisissez "install server" et selectionnez un dossier vide dans lequel le serveur va être temporairement installé (il sera ensuite déplacé dans le dossier de MCSS) et cliquez sur OK. Les fichier nécessaires au serveur vont être téléchargés et placés dans le dossier indiqué.
 
-![The Forge installer](assets/screenshots/install_forge.png)
+![L'installateur Forge](assets/screenshots/install_forge.png)
 
-The folder now contains : 
+Le dossier contient maintenant : 
+*   Un sous-dossier `libraries`
+*   Un fichier `<version_minecraft>.json`
+*   Un fichier `forge-<version_minecraft>-<version_forge>.jar`
+*   Un fichier `minecraft-server.<version_minecraft>.jar`
 
-*   A sub-folder `libraries`
-*   A file `<minecraft_version>.json`
-*   A file `forge-<minecraft_version>-<forge_version>.jar`
-*   A file `minecraft-server.<minecraft_version>.jar`
-
-You can now delete the forge installer file.
+Vous pouvez maintenant supprimer l'installateur de forge.
 
 <a name="migrate-server"></a>
-## Migrate the server to MCSS
+## Importer le serveur dans MCSS
 
-Now, open MCSS and go to "File > migrate server". A new windows will open. Inside it, choose a name for you server and a folder name (that will be stored to `mcss/servers/<folder_name>`. Choose the amout of RAM that will be allocated to the server, in MB (it's recommended to have at least 4GB, or 4096MB, for a Forge server).<br>
-In "server type" choose Forge. Finally, select the executable jar file of the server : it's the `forge-<minecraft_version>-<forge_version>.jar` file of the server you created in the steps above and click "Migrate". Do not change the Startup Line, or MCSS will break and your server won't work properly.<br>
-All the server files are copied to the /servers folder of MCSS and your server will appear in the servers list. <br>
+Maintenant, ouvrez MCSS et allez dans "File > migrate server". Une nouvelle fenêtre s'ouvre. Dans celle-ci, choisissez un nom pour votre serveur ansi qu'un nom de dossier (qui sera stocké dans `mcss/servers/<nom_dossier>`). Choisissez la quantité de RAM allouée au serveur, en Mo (pour un serveur Forge, il est recommandé d'avoir au moins 4Go, ou 4096Mo). <br>
+Dans "server type" choisissez Forge. Enfin, selectionnez le jar executable du serveur : c'est le fichier `forge-<version_minecraft>-<version_forge>.jar` du serveur que vous avez installé plus tôt et cliquez sur "Migrate". Ne touchez pas à la ligne "Startup Line", sinon MCSS ne fonctionnera pas correctement et votre serveur ne sera pas utilisable.<br>
+Tous les fichiers du serveur vont être copiés dans le dossier /servers de MCSS et votre serveur va apparaître dans la liste des serveurs. <br>
 
-You can also delete the temporary folder where you installed Forge, it is now useless since all the files have been copied to the /servers folder of the app.
+Vous pouvez également supprimer le dossier temporaire dans lequel vous aviez installé forge, il est inutile vu que tous les fichiers ont été copiés dans le dossier /servers de MCSS
 
-![server migration window](assets/screenshots/migrate_forge.png)
+![La fenêtre de migration de serveur](assets/screenshots/migrate_forge.png)
 
-You can now start you Forge server by clicking the "Start" button. <br>
-At the first server start, the console will show an error asking you to accept the EULA. To do so, click on "servers > show in file explorer" and open the "eula.txt" file. Change the line `eula=false` to `eula=true` and start the server again. <br>
-this time, it will fully start and you will be able to connect from you Minecraft client.
-
+Vous pouvez maintenant démarrer le serveur Forge en cliquant sur "start". <br>
+La première fois que le serveur va démarrer, la console affichera une erreur vous demandant d'accepter l'EULA. Pour cela, cliquez sur "server > show in file explorer" et ouvrez le fichier "eula.txt". Changez la ligne `eula=false` en `eula=true` puis démarrez à nouveau votre serveur. <br>
+Cette fois, il va démarrer complètement et vous pourrez vous connecter depuis votre client Minecraft.

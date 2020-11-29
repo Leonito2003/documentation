@@ -2,38 +2,46 @@
 
 ---
 
-*   [How do I setup a Forge server?](#setup-forge)
-*   [How do I add mods/plugins/datapacks to my server?](#add-modifications)
+*   [Comment ajouter un serveur Forge ?](#setup-forge)
+*   [Comment ajouter des mods/plugins/datapacks à mon serveur ?](#add-modifications)
 
 
 <a name="setup-forge"></a>
-## How do I setup a Forge server?
+## Comment ajouter un serveur Forge ?
 
-> WIP
+Une page dédiée de la documentation à ce sujet est disponible [ici](./create-forge-server.md)
 
 <a name="add-modifications"></a>
-## How to add Modifications to your server
+## Comment ajouter des mods/plugins/datapacks à mon serveur ?
 
 * ### Mods
-    * #### Downloading Mods
-        You can download mods from sites such as [CurseForge](https://www.curseforge.com/) or [Minecraft Mods](https://www.minecraftmods.com/).
-    * #### Installing Mods
-        To install the previously downloaded mod/s, you need to navigate to your server files, these can be found in the `Servers` folder in the instalation directory of mcss, you should see all the available servers, navigate to the one you want to add your mod/s to *(The server needs to be Forge to be able to support mod/s)* there should be a folder called `mods` *(If this folder does not exist run the server and look again, if it still hasnt generated you can ask for help in help support)* you simply drag and drop your downloaded mod/s into that folder, restart or start your server and your done!
+    * #### Télécharger des Mods
+        Vous pouvez télécharger des mods depuis des sites tels que [CurseForge](https://www.curseforge.com/) ou [Minecraft Mods](https://www.minecraftmods.com/).
+    * #### Installer des Mods
+        Pour installer les mods téléchargés, votre serveur doit forcément utiliser Forge. Pour en créer un de ce type, voir [ici](#setup-forge).
+        Ensuite, naviguez vers le dossier de votre serveur. Il se situe dans le dossier d'installation de MCSS sous le chemin `/servers/<votre-serveur>`. Vous pouvez aussi y acceder directement depuis MCSS en cliquant sur `Server > Show in file explorer`.
+        Il devrait y avoir un dossier `mods`, si il n'existe pas essayer de lancer le serveur puis de l'arrêter. Si vous ne voyez toujours pas ce dossier, créez-le : il doit s'appeler exactement `mods`. Pour finir, déposez les fichiers .jar de vos mods dans le dossier mods et démarrez votre serveur.
 * ### Plugins
-    * #### Plugin Compatability
-        |  | Bukkit (server) | Spigot (server) | Paper (server) | Sponge (server) |
+    * #### Compatibilité des Plugin
+        |  | Bukkit (serveur) | Spigot (serveur) | Paper (serveur) | Sponge (serveur) |
         |---|---|---|---|---|
         | Bukkit (plugin) | ✅ | ✅ | ✅ | ❌ |
         | Spigot (plugin) | ❌ | ✅ | ✅ | ❌ |
         | Paper (plugin) | ❌ | ❌ | ✅ | ❌ |
         | Sponge (plugin) | ❌ | ❌ | ❌ | ✅ |
-    * #### Downloading Plugins
-        You can download plugins from sites such as [Spigot](https://www.spigotmc.org/resources/) or [Bukkit](https://dev.bukkit.org/).
-    * #### Installing Plugins
-        To install the previously downloaded plugin/s, you need to navigate to your server files, these can be found in the `Servers` folder in the instalation directory of mcss, you should see all the available servers, navigate to the one you want to add your plugin/s to *(The server needs to be Bukkit, Spigot or Paper to be able to support the relative plugin/s)* there should be a folder called `plugins` *(If this folder does not exist run the server and look again, if it still hasnt generated you can ask for help in help support)* you simply drag and drop your downloaded plugin/s into that folder, restart or start your server and your done!
+    * #### Télécharger des Plugins
+        Vous pouvez télécharger des plugins depuis des sites tels que [Spigot](https://www.spigotmc.org/resources/) ou [Bukkit](https://dev.bukkit.org/).
+    * #### Installer des Plugins
+        Pour installer les mods téléchargés, votre serveur doit forcément utiliser Pigot, Bukkit, Paper ou Sponge. Pour en créer un de ce type, voir [ici](./create-server).
+        Ensuite, naviguez vers le dossier de votre serveur. Il se situe dans le dossier d'installation de MCSS sous le chemin `/servers/<votre-serveur>`. Vous pouvez aussi y acceder directement depuis MCSS en cliquant sur `Server > Show in file explorer`.
+        Il devrait y avoir un dossier `plugins`, si il n'existe pas essayer de lancer le serveur puis de l'arrêter. Si vous ne voyez toujours pas ce dossier, créez-le : il doit s'appeler exactement `plugins`. Pour finir, déposez les fichiers .jar de vos plugins dans le dossier plugins et démarrez votre serveur.
 * ### Datapacks
-    * #### Downloading Datapacks
-        You can download plugins from sites such as [Planet Minecraft](https://www.planetminecraft.com/data-packs/).
-    * #### Installing Datapacks
-        Download the data pack. It should be a .zip file or directory. Navigate to your server files, these can be found in the `Servers` folder in the instalation directory of mcss, you should see all the available servers, navigate to the one you want to add your datapack/s to. Put the data pack into a folder named `datapacks`. Restart your server and if the datapack is in the correct format and version it should be enabled. You can verify by typing `/datapack list enabled` from the console or as a level 3 operator and find an entry named `[file/your data pack file/directory name]`.
+    * #### Télécharger des Datapacks
+        Vous pouvez télécharger des mods depuis des sites tels que [Planet Minecraft](https://www.planetminecraft.com/data-packs/).
+    * #### Installer des Datapacks
+        Téléchargez le datapack. Il devrait avoir la forme d'un fichier .zip.
+        Pour utiliser des datapacks, votre serveur doit forcément être en version 1.13 ou plus. Pour mettre à jour un serveur, voir [ici](./update-server.md).
+        Ensuite, naviguez vers le dossier de votre serveur. Il se situe dans le dossier d'installation de MCSS sous le chemin `/servers/<votre-serveur>`. Vous pouvez aussi y acceder directement depuis MCSS en cliquant sur `Server > Show in file explorer`.
+        Ouvrez le dossier contenant le monde de votre serveur (le plus souvent nommé `/world`). Dans celui-ci, vous trouverez un dossier `/Datapacks`, déposez-y les fichiers .zip de vos datapacks. Enfin, redémarrez le serveur.
+        Vous pouvez vérifier que vos datapacks ont bien été activés en tapant `/datapacks list enabled` dans la console ou en tant qu'opérateur du serveur. Vous verrez alors la list de tous les datapacks actifs sur le serveur.
 

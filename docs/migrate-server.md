@@ -1,41 +1,42 @@
-# Migrate an existing server
+# Migrer un serveur existant
 
 ---
 
-*   [Choosing a server type](#choosing-a-server-type)
-*   [Details and importing the old server](#details-and-importing-the-old-server)
-*   [Wrapping it up](#wrapping-it-up)
+*   [Choisir un type de serveur](#choosing-a-server-type)
+*   [Détails et importation de l'ancien serveur](#details-and-importing-the-old-server)
+*   [Finaliser](#wrapping-it-up)
 
 <a name="#choosing-a-server-type"></a>
-## Choosing a server type
+## Choisir un type de serveur
 
-There are a few supported types to choose from. Pick the one that matches your server you wish to import.
+Il y a quelques types de serveurs parmi lesquels choisir. Sélectionnez celui qui correspond au serveur que vous voulez importer.
 
 ![Part of a screenshot of the create instance window, slightly faded out towards the bottom](assets/screenshots/migrate_server_type.png)
 
 <a name="details-and-importing-the-old-server"></a>
-## Details and importing the old server
+## Détails et importation de l'ancien serveur
 
-It's time to fill in all details about your server.
+Vous allez maintenant modifier les détails de votre serveur.
 
-Setting name | Description
+Nom du réglage | Description
 --- | ---
-Server Name | A name for your server, this is only visible to you.
-Folder Path | A unique location for your server, stored in the /servers directory.
-Startup Line | The command used to start the server. It is tempting to change the ***[RAM]*** variable but I can only discourage you from doing so. Instead use the appropriate ***Server Ram*** setting.
-Server Ram | The amount of memory that will be dedicated to your server.
+Server Name | Un nom pour votre serveur, visible seulement par vous.
+Folder Path | Un chemin unique vers le serveur, stocké dans le dossier /servers.
+Startup Line | La ligne de commande pour démarrer le serveur. Il est tentant de changer la variable ***[RAM]*** mais il est déconseillé de le faire. À la place, utilisez le champ approprié : ***Server Ram***.
+Server Ram | La quantité de RAM que votre serveur pourra utiliser.
+
 
 ![Screenshot of the migrate instance window where you can change the server settings](assets/screenshots/migrate_server_settings.png)
 
-Next click on the green folder icon in the bottom corner and browse to the location of the server you want to migrate. Select the server jar.
+Ensuite, cliquez sur l'icône de dossier verte et naviguez jusqu'à l'emplacement du serveur que vous migrez. Sélectionnez le jar du serveur.
 
 ![Part of a screenshot of the migrate instance window, slightly faded out towards the bottom](assets/screenshots/migrate_server_start.png)
 
-Before you click "Migrate" make sure that the other server is offline.
+Avant de cliquer sur 'Migrate', assurez-vous que l'ancien serveur est éteint.
 
 <a name="wrapping-it-up"></a>
-## Wrapping it up
+## Finaliser
 
-All done! Wasn't that easy?
+Tout est terminé !
 
 ![Screenshot of the create instance window](assets/screenshots/migrate_server_finished.png)
