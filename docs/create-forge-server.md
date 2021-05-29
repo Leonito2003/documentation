@@ -2,11 +2,6 @@
 
 ---
 
-*   [Télécharger Forge](#download-forge)
-*   [Créer le serveur Forge](#create-forge-server)
-*   [Importer le serveur dans MCSS](#migrate-server)
-
-<a name="download-forge"></a>
 ## Télécharger Forge
 
 Commencez par aller sur [le site de Forge](https://files.minecraftforge.net) et choisissez la version que vous voulez télécharger. Cliquez sur "Installer" pour télécharger l'installateur forge.
@@ -15,7 +10,6 @@ Commencez par aller sur [le site de Forge](https://files.minecraftforge.net) et 
 
 Attendez la fin de la pub (6 secondes) et cliquez sur "Skip" en haut à droite. Un fichier .jar va être téléchargé.
 
-<a name="create-forge-server"></a>
 ## Créer le serveur Forge
 
 Une fois le téléchargement terminé, ouvrez le fichier `forge-<version_minecraft>-<version_forge>-installer.jar` pour commencer l'installation de Forge.<br>
@@ -31,7 +25,6 @@ Le dossier contient maintenant :
 
 Vous pouvez maintenant supprimer l'installateur de forge.
 
-<a name="migrate-server"></a>
 ## Importer le serveur dans MCSS
 
 Maintenant, ouvrez MCSS et allez dans "File > migrate server". Une nouvelle fenêtre s'ouvre. Dans celle-ci, choisissez un nom pour votre serveur ansi qu'un nom de dossier (qui sera stocké dans `mcss/servers/<nom_dossier>`). Choisissez la quantité de RAM allouée au serveur, en Mo (pour un serveur Forge, il est recommandé d'avoir au moins 4Go, ou 4096Mo). <br>

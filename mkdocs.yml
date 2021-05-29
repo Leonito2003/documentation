@@ -1,7 +1,7 @@
 site_name: MC Server Soft Documentation
 theme:
   name: material
-  language: en
+  language: fr
   logo: assets/logo.png
   favicon: assets/favicon.ico
   features:
